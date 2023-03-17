@@ -617,13 +617,6 @@
       ],
       "value": ""
     }, {
-      "id": "f9cfcbeb-5465-4c79-8f85-fa579daed57a",
-      "comment": "",
-      "command": "pause",
-      "target": "",
-      "targets": [],
-      "value": "30000"
-    }, {
       "id": "d8958a7e-d053-415a-99bf-d91d805e8a77",
       "comment": "",
       "command": "assertElementNotPresent",
