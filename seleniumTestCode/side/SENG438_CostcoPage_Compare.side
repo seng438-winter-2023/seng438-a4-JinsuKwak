@@ -1,0 +1,1006 @@
+{
+  "id": "ebe8354f-594b-48c6-aef9-9eb955b16acb",
+  "version": "2.0",
+  "name": "SENG438_CostcoPage_Compare",
+  "url": "https://www.costco.ca/",
+  "tests": [{
+    "id": "21726432-b48d-49f3-8dd4-869cd07ce5f6",
+    "name": "CompareOneProduct",
+    "commands": [{
+      "id": "13a95f73-1775-433f-b778-f24580549c45",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c436c000-52c2-43fe-ab7d-25584ab31158",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1236x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67d5e673-85e1-4abb-b17f-67e2e9f04199",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53364ea2-700a-41ed-8fb3-7581ea4cd335",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins",
+      "targets": [
+        ["linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins", "linkText"],
+        ["css=#slick-slide10 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide10']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/northfork-meats---venison-tenderloin-350-g-(12.3-oz)-x-4-tenderloins.product.100418346.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed9864d-cb11-4a65-aecc-1949b82b1b9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49399b4b-3521-4a58-a078-3f7639595231",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-buttons-container > .primary",
+      "targets": [
+        ["css=.compare-buttons-container > .primary", "css:finder"],
+        ["xpath=//input[@value='Compare']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04854cf8-f3f3-463b-97c5-2fb7b680f4c7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,61)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf3c793b-17e1-4504-a6ad-fbc06056cc76",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove",
+      "targets": [
+        ["linkText=Remove", "linkText"],
+        ["css=.remove-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove')]", "xpath:link"],
+        ["xpath=//div[@id='product-tile-box']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[8]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f45f4b4-6ee8-4e0c-89e1-3a9fd31d549a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='compare-products-page']/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Compare Products')]", "xpath:innerText"]
+      ],
+      "value": "Compare Products"
+    }]
+  }, {
+    "id": "e41c5b35-edb8-4b67-947e-ce582f289f62",
+    "name": "CompareTwoProducts",
+    "commands": [{
+      "id": "3223304f-16c3-43c8-a981-9ac99b4d4661",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15fa0e65-e516-47e2-a01c-356428e749c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1236x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1e1c5a0-7647-4500-bd31-3a7b8ea24166",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8d0fd58-85ee-4e44-b143-4f35460938aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33efa9af-c34f-482e-b78a-e8e80bba3848",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins",
+      "targets": [
+        ["linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins", "linkText"],
+        ["css=#slick-slide10 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide10']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/northfork-meats---venison-tenderloin-350-g-(12.3-oz)-x-4-tenderloins.product.100418346.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f913be8-3115-44e0-9f4b-def6e96bd7f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdbec591-e23a-4d42-a946-628d2190ec0d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8516111-81cd-4620-b7c2-9701ff3d90f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4ec4f7e-5132-478b-9d1a-f4d7b5114f11",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans",
+      "targets": [
+        ["linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans", "linkText"],
+        ["css=#slick-slide11 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide11']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/gutsy-kombucha-favorites-355ml-(12-fl-oz)-x-32-cans.product.100985717.html')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4b2e166-6bf2-43fa-a2a3-9ef3f3f38fcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff38b73-e5bb-4dd5-b7e6-320966b48e1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.compare-buttons-container > .primary",
+      "targets": [
+        ["css=.compare-buttons-container > .primary", "css:finder"],
+        ["xpath=//input[@value='Compare']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ec67665-17cd-442d-b32b-8e071880cd8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-buttons-container > .primary",
+      "targets": [
+        ["css=.compare-buttons-container > .primary", "css:finder"],
+        ["xpath=//input[@value='Compare']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c879b3ba-5a74-4356-9147-b4832975ec38",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.compare-values-header:nth-child(2)",
+      "targets": [
+        ["css=.compare-values-header:nth-child(2)", "css:finder"],
+        ["xpath=//table[@id='compare-products-table']/tbody/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": "Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins"
+    }, {
+      "id": "c070f3d2-4e5f-45f0-8dfc-03c6d318ace1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.compare-values-header:nth-child(3)",
+      "targets": [
+        ["css=.compare-values-header:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='compare-products-table']/tbody/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:innerText"]
+      ],
+      "value": "Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans"
+    }, {
+      "id": "e365bfea-ba06-4c55-a31a-c648a4cce6cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove",
+      "targets": [
+        ["linkText=Remove", "linkText"],
+        ["css=.product:nth-child(1) .remove-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove')]", "xpath:link"],
+        ["xpath=//div[@id='product-tile-box']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[8]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b75f0692-f15a-425e-a90e-842fdba4832c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove",
+      "targets": [
+        ["linkText=Remove", "linkText"],
+        ["css=.remove-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove')]", "xpath:link"],
+        ["xpath=//div[@id='product-tile-box']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[8]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "21da71af-3bb1-494e-b94c-febde4f786fa",
+    "name": "CompareTwoProductsRemoveOne",
+    "commands": [{
+      "id": "0526e562-e21c-49b7-b27f-4f68f6d10570",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eeb57f83-872d-4e7f-8acc-95dc0d6b66e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1236x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "204dfed9-7647-4a0c-b14a-398fcc658cff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a418aa5-1ef6-46b4-9ef0-b9b8453a44c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7d41e86-ae88-4e16-ab39-ea5e1a542e96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins",
+      "targets": [
+        ["linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins", "linkText"],
+        ["css=#slick-slide10 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide10']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/northfork-meats---venison-tenderloin-350-g-(12.3-oz)-x-4-tenderloins.product.100418346.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c48a693e-f209-44ff-a2ec-fbc09ca3baaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6cabf6-e77d-4041-8ae9-147721531c70",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2096b6fe-97a2-42f9-a82d-5f3342d91f09",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "614b88f2-9a19-463c-8632-6d33169e04ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans",
+      "targets": [
+        ["linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans", "linkText"],
+        ["css=#slick-slide11 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide11']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/gutsy-kombucha-favorites-355ml-(12-fl-oz)-x-32-cans.product.100985717.html')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c1a250-9a68-459c-b90d-78f42ac2331a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75fc8ea9-cf46-4a2d-a33b-7afe079059f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-image-container:nth-child(2) > .tertiary",
+      "targets": [
+        ["css=.compare-image-container:nth-child(2) > .tertiary", "css:finder"],
+        ["xpath=//button[@onclick=\"COSTCO.compareProducts.toggleItem('100985717');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-row']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85c7de82-50fe-48c3-a306-f7e5d78fc735",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.compare-image-container:nth-child(2) > .tertiary",
+      "targets": [
+        ["css=.compare-image-container:nth-child(2) > .tertiary", "css:finder"],
+        ["xpath=//button[@onclick=\"COSTCO.compareProducts.toggleItem('100985717');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-row']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ff0f432-ca1e-4f19-a81c-82088ad33377",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-buttons-container > .tertiary",
+      "targets": [
+        ["css=.compare-buttons-container > .tertiary", "css:finder"],
+        ["xpath=//input[@value='Remove All']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f7c2f277-aed3-4155-8e2a-940bc4d4c981",
+    "name": "CompareTwoProductsRemoveAll",
+    "commands": [{
+      "id": "24754391-1e43-4619-95d1-3d3407fc9649",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "209c3ac9-2bd3-4bc9-8eeb-41b5cfcaadaa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1236x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9820026-7c81-474f-8051-d8e4b20ff3ff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "411861fa-613e-41d4-aec5-e52e2eb6f156",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae8fb8a0-102c-4057-ac85-ec48caeab08e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins",
+      "targets": [
+        ["linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins", "linkText"],
+        ["css=#slick-slide10 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide10']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/northfork-meats---venison-tenderloin-350-g-(12.3-oz)-x-4-tenderloins.product.100418346.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b81eb8-d7ca-4cca-a83a-d75d69cdf050",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f9efe0-fde5-456b-af5f-a6505115bfc8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81936c13-0208-4c5d-ba51-b3b492a23b11",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a1ea59-d831-42eb-ae59-200646f544bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans",
+      "targets": [
+        ["linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans", "linkText"],
+        ["css=#slick-slide11 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide11']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/gutsy-kombucha-favorites-355ml-(12-fl-oz)-x-32-cans.product.100985717.html')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "700ef80d-a45c-4c6e-b011-d2a2b7ec0196",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42de6204-a275-4ad3-a360-77f830f1d16b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-buttons-container > .tertiary",
+      "targets": [
+        ["css=.compare-buttons-container > .tertiary", "css:finder"],
+        ["xpath=//input[@value='Remove All']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9cfcbeb-5465-4c79-8f85-fa579daed57a",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d8958a7e-d053-415a-99bf-d91d805e8a77",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.remove",
+      "targets": [
+        ["css=.remove", "css:finder"],
+        ["xpath=//button[@onclick=\"COSTCO.compareProducts.toggleItem('100985717');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-row']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7280ee98-c59e-4706-9b94-7915e79fc0f6",
+    "name": "CompareTwoProductsHide",
+    "commands": [{
+      "id": "46603149-53ff-4edd-81e0-19c3389cb125",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27452faf-4ca4-4bee-8175-f9bade89e9e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1236x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc6dc6b9-8437-466d-b122-0ed30ed78a72",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b969b961-da9b-4155-a45e-a01786d32098",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a89955a1-a18c-426a-bace-37ed0f191dff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins",
+      "targets": [
+        ["linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins", "linkText"],
+        ["css=#slick-slide10 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide10']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/northfork-meats---venison-tenderloin-350-g-(12.3-oz)-x-4-tenderloins.product.100418346.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f215d4c9-5cf9-467d-ab1c-2623ec927448",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "025d1f48-3330-49d7-bdff-5820dd687165",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82d30c95-7154-419d-9fca-b2749a72107a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f22eb326-fbcc-4305-8828-6654a48b3f5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans",
+      "targets": [
+        ["linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans", "linkText"],
+        ["css=#slick-slide11 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide11']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/gutsy-kombucha-favorites-355ml-(12-fl-oz)-x-32-cans.product.100985717.html')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6594219-4993-4a93-b663-84e45c12f635",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25abd53b-5f62-43a2-9531-ac280ce7da16",
+      "comment": "",
+      "command": "click",
+      "target": "id=minimize-text",
+      "targets": [
+        ["id=minimize-text", "id"],
+        ["css=#minimize-text", "css:finder"],
+        ["xpath=//span[@id='minimize-text']", "xpath:attributes"],
+        ["xpath=//button[@id='compare-minimize']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c23a92-e1f8-41b1-97d8-484fc9c1b47c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=minimize-text",
+      "targets": [
+        ["id=minimize-text", "id"],
+        ["css=#minimize-text", "css:finder"],
+        ["xpath=//span[@id='minimize-text']", "xpath:attributes"],
+        ["xpath=//button[@id='compare-minimize']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button/span", "xpath:position"]
+      ],
+      "value": "Show"
+    }, {
+      "id": "1cd41880-064c-4159-a3ea-c78623c2e83b",
+      "comment": "",
+      "command": "click",
+      "target": "id=minimize-text",
+      "targets": [
+        ["id=minimize-text", "id"],
+        ["css=#minimize-text", "css:finder"],
+        ["xpath=//span[@id='minimize-text']", "xpath:attributes"],
+        ["xpath=//button[@id='compare-minimize']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfc9c05e-a092-49a5-b83e-b6e7fc67b397",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-buttons-container > .tertiary",
+      "targets": [
+        ["css=.compare-buttons-container > .tertiary", "css:finder"],
+        ["xpath=//input[@value='Remove All']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8e27e870-7c67-4f2f-b443-42ad0b9c90a6",
+    "name": "CompareTwoProductsShow",
+    "commands": [{
+      "id": "a44e8b85-20b9-4b2a-8040-3c124694e631",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "191ff2de-7c5f-4959-be84-0b44151428dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1236x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a03004d-2c92-4845-933a-ecff8979bb1c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ea4946f-d242-4cbb-9224-eb207f5168e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "213623f9-39e1-485b-9209-d445750c1243",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins",
+      "targets": [
+        ["linkText=Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins", "linkText"],
+        ["css=#slick-slide10 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide10']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/northfork-meats---venison-tenderloin-350-g-(12.3-oz)-x-4-tenderloins.product.100418346.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Northfork Meats - Venison Tenderloin 350 g (12.3 oz) x 4 tenderloins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c86f0d-ce73-4141-88a3-f4138b95a88b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9998af9-971f-4a57-901f-83da989d6ee3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "050f8301-8b50-4c0e-aabf-e55d7c2f1cc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee9429b3-8215-4030-9e0e-577ed33cf3ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans",
+      "targets": [
+        ["linkText=Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans", "linkText"],
+        ["css=#slick-slide11 .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:link"],
+        ["xpath=//div[@id='slick-slide11']/div/div[2]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/gutsy-kombucha-favorites-355ml-(12-fl-oz)-x-32-cans.product.100985717.html')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gutsy Kombucha Favorites 355ml (12 fl oz) x 32 cans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c9bd219-3d0f-4909-834f-9bc63341810e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mar_top",
+      "targets": [
+        ["css=.mar_top", "css:finder"],
+        ["xpath=//div[@id='product-page']/div[3]/div/div[4]/div[6]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Compare Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90bbfe22-353f-48bc-9a8c-b3f4a746d958",
+      "comment": "",
+      "command": "click",
+      "target": "id=minimize-text",
+      "targets": [
+        ["id=minimize-text", "id"],
+        ["css=#minimize-text", "css:finder"],
+        ["xpath=//span[@id='minimize-text']", "xpath:attributes"],
+        ["xpath=//button[@id='compare-minimize']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c87473-e3a2-42e8-adbe-10ce61f230ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=minimize-text",
+      "targets": [
+        ["id=minimize-text", "id"],
+        ["css=#minimize-text", "css:finder"],
+        ["xpath=//span[@id='minimize-text']", "xpath:attributes"],
+        ["xpath=//button[@id='compare-minimize']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44969e77-b44e-4880-b71e-74c470b4396f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=minimize-text",
+      "targets": [
+        ["id=minimize-text", "id"],
+        ["css=#minimize-text", "css:finder"],
+        ["xpath=//span[@id='minimize-text']", "xpath:attributes"],
+        ["xpath=//button[@id='compare-minimize']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button/span", "xpath:position"]
+      ],
+      "value": "Hide"
+    }, {
+      "id": "c973d502-695c-44fa-a434-d91edf341fe5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-buttons-container > .tertiary",
+      "targets": [
+        ["css=.compare-buttons-container > .tertiary", "css:finder"],
+        ["xpath=//input[@value='Remove All']", "xpath:attributes"],
+        ["xpath=//div[@id='compare-box-products']/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "99a13b6c-4dcf-476b-b4c8-319f31d5d8a1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.costco.ca/"],
+  "plugins": []
+}
