@@ -50,6 +50,7 @@ In this assignment, students were required to learn two important aspects of tes
 
 # How the team work/effort was divided and managed
 
+For the GUI Testing, we made a list of possible functionalities that our chosen website would have and put our names beside the functionalities and got that done
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
