@@ -53,4 +53,8 @@ In this assignment, students were required to learn two important aspects of tes
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
+    Some difficulties encountered in this assignment is firstly, running the PIT mutations on our computers. It took very long to execute the mutation tests and we did not know what the printed code on the console meant. But after some asking around and help with the TA's, we were able to run the PIT mutations on our laptops and were able to generate the reports of the killed and survived mutants are well as the mutation coverage percentage for each class. Another difficulty we faced was during the GUI testing. Just trying to set up the Selenium IDE took some time since we were not familiar with it. But we also had some difficulty understanding how to do the verification points on the Selenium IDE for our tests but we researched and asked with our peers and were able to solve our issues. 
+
 # Comments/feedback on the lab itself
+
+    This assignment took a long time for us to understand what exactly needs to be done. It was also hard because the PIT Mutations took a very long time to execute and compile. Overall, the assignment was effective in creating tasks that demonstrated Mutation and GUI testing.
