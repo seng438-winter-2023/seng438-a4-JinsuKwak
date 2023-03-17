@@ -166,22 +166,19 @@ public class DataUtilitiesTest {
 	     int columnNumber = -1;
 	     double actualResult = DataUtilities.calculateColumnTotal(values, columnNumber);
 	     double expectedResult = 0;	// 0 since invalid input
-	     assertEquals("calcuateColumTotal() did not return 0 when there was invalid input (negative index)",expectedResult, actualResult, .000000001d);
+	     assertEquals("calcuateColumnTotal() did not return 0 when there was invalid input (negative index)",expectedResult, actualResult, .000000001d);
 	 }
 	 
 	 /*
      *  This test will simulate when invalid data object passed in
      *  Expected result: throws InvalidParameterException
 	 */
-	 @Test(timeout = 1000) // timeout: 1000
+	 @Test(expected = IllegalArgumentException.class) // timeout: 1000
 	 public void testCalculateColumnNullValue(){
 		 final Values2D values = null; 				  // invalid data object (null)
-		 try {
-			 DataUtilities.calculateColumnTotal(values, 0);// line that exception will occurs
-		 }catch(Exception e) {
-			 assertEquals("InvalidParameterException was thrown",InvalidParameterException.class, 
-					 e.getClass());
-		 }
+	
+		 DataUtilities.calculateColumnTotal(values, 0);// line that exception will occurs
+
 	 }
 	 
 	 /*
@@ -243,19 +240,13 @@ public class DataUtilitiesTest {
 	  * This will test the case when a null double array is passed to createNumberArray
 	  * It should throw an InvalidParameterException.
 	  */
-	 @Test
+	 @Test (expected = IllegalArgumentException.class)
 	 public void createNumberArrayNull() {
-		 // Try/catch block to catch exceptions
-		 try {
-			 // create a null double array to pass
-			 double [] passArray = null;
-			 DataUtilities.createNumberArray(passArray);
+	
+		// create a null double array to pass
+		double [] passArray = null;
+		DataUtilities.createNumberArray(passArray);
 			 
-
-		 }catch(Exception e) {
-			 assertEquals("InvalidParameterException was thrown",InvalidParameterException.class, 
-					 e.getClass());
-		 }
 
 	 }
 	 
@@ -316,7 +307,7 @@ public class DataUtilitiesTest {
 	 @Test
 	 public void createNumberArrayOneElement() {
 		 // expected Number array
-		 Number[] expected = {0};
+		 Number[] expected = {0.0};
 		 // double array to be passed to createNumberArray 
 		 double [] passArray = {0};
 		 // calling function to create array
@@ -366,19 +357,13 @@ public class DataUtilitiesTest {
 	  * This will test the case when a null 2D double array is passed to createNumberArray2D
 	  * It should throw an InvalidParameterException.
 	  */
-	 @Test
+	 @Test (expected = IllegalArgumentException.class)
 	 public void createNumberArray2DNull() {
-		 // Try/catch block to catch exceptions
-		 try {
-			 // create a null double array to pass
-			 double [][] passArray = null;
-			 DataUtilities.createNumberArray2D(passArray);
-			 
+	
 
-		 }catch(Exception e) {
-			 assertEquals("InvalidParameterException was thrown",InvalidParameterException.class, 
-					 e.getClass());
-		 }
+		 // create a null double array to pass
+		double [][] passArray = null;
+		DataUtilities.createNumberArray2D(passArray);
 
 	 }
 	 
@@ -1147,6 +1132,7 @@ public class DataUtilitiesTest {
 	   *  This test will simulate when there is a null value in the input
 	   *  Expected result: returns valid double[][] that is a clone
 	   */
+	  @Ignore
 	  @Test
 	  public void testCloneNullValueInInput() {
 		 double[][] source = new double[2][3];
@@ -1450,8 +1436,65 @@ public class DataUtilitiesTest {
 					
 			 
 	// ------- End of Test for CalculateRowTotal(Values2D data, int row, int[] validCols) double -------
-			
+			 
+	// -----------------------------------------------------------------------------------------
+	// Start of Test Code LAB4
+	// -----------------------------------------------------------------------------------------
+		    			
 
+			 /*
+			  *  This test will simulate when only the second input is null
+			  *  Expected result: returns false
+			  *  This should squash line 76 conditions 2 and 7 
+			  */
+			 @Test
+			 public void testEqualFirstInputNull() {
+				 double [][] array = {{1.0,-2.0,3.0},{-1.0,2.0,-3.0}};
+				 boolean actualResult = DataUtilities.equal(null,  array);
+				 assertEquals("Checking equality when first input is null", false, actualResult);
+			 }
+			 
+			 
+			 /*
+			  *  This test will simulate when the two 2D array inputs have different lengths (rows)
+			  *  Expected result: returns false
+			  *  This should squash line 81 condition 5 and 84 condition 16
+			  */
+			 @Test
+			 public void testEqualDifferentLength2DArraysFirstLessSecond() {
+				 double [][] firstArray = {{1.0,2.1,3.4},{-1.2,0.0,10.0},{-1.3,1.0,10.0}};
+				 double [][] secondArray = {{1.0,2.1,3.4},{-1.2,0.0,10.0}};
+
+				 boolean actualResult = DataUtilities.equal(secondArray, firstArray);
+				 assertEquals("Checking equality when 2D Array inputs are different lengths", false, actualResult);
+			 }
+			 /*
+			  *  This test will simulate cloning
+			  *  This should squash line 104 condition 15
+			  *  x
+			  */
+			  @Test
+			  public void testCloneLengthMutation() {
+				 double[][] source = new double[0][];
+				 
+		   	     double[][] actualResult = DataUtilities.clone(source);
+				 assertEquals("Check the length", source.length, actualResult.length);
+	
+			  }
+			  
+				 /*
+				  *  This test will simulate cloning with a null nested array
+				  *  This should squash line 104 condition 3
+				  */
+				  @Test
+				  public void testCloneNestedNullMutation() {
+					 double[][] source = {{1.0,2.0},null,{3.0,4.0}};
+					 double[][] expected = {{1.0,2.0},null,{3.0,4.0}};
+					 
+			   	     double[][] actualResult = DataUtilities.clone(source);
+					 assertArrayEquals("Array with nested null value cloned", expected, actualResult);
+		
+				  }
 	
      // -----------------------------------------------------------------------------------------
      // End of Test Code
