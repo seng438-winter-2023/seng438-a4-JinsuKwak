@@ -45,7 +45,7 @@ public class SearchforWarehouseDetailsTest {
     driver.findElement(By.id("search-warehouse")).sendKeys("Calgary");
     driver.findElement(By.cssSelector(".input-group-btn > .btn-primary")).click();
     {
-      WebDriverWait wait = new WebDriverWait(driver, 30);
+      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
       wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("N Calgary")));
     }
     {
