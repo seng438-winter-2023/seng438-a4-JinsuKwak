@@ -28,7 +28,8 @@ In this assignment, students were required to learn two important aspects of tes
        
       After:
 
-<img width="500" alt="Screen Shot 2023-03-17 at 10 51 16 AM" src="https://user-images.githubusercontent.com/56771715/225969375-b298defe-7f8e-44ab-8c11-219a9a365e80.png">
+<img width="500" alt="Screen Shot 2023-03-17 at 11 24 49 AM" src="https://user-images.githubusercontent.com/56771715/225976617-14195581-a243-4517-85dc-6033f7e0e157.png">
+
 
 
 # Analysis drawn on the effectiveness of each of the test classes
