@@ -24,12 +24,11 @@ In this assignment, students were required to learn two important aspects of tes
 
       Before:
       
-<img width="500" alt="Screen Shot 2023-03-16 at 1 44 06 PM" src="https://user-images.githubusercontent.com/56771715/225933948-ca57b148-c072-4361-b72a-21e540a7f169.png">
-
+<img width="500" alt="Screen Shot 2023-03-17 at 10 53 36 AM" src="https://user-images.githubusercontent.com/56771715/225969332-6b179bf1-f52b-4bd3-ac84-f5f6b2c752c1.png">
        
       After:
 
-<img width="500" alt="Screen Shot 2023-03-16 at 11 36 46 PM" src="https://user-images.githubusercontent.com/56771715/225933727-5dedc9b4-fa01-4269-af7f-e1e98866b688.png">
+<img width="500" alt="Screen Shot 2023-03-17 at 10 51 16 AM" src="https://user-images.githubusercontent.com/56771715/225969375-b298defe-7f8e-44ab-8c11-219a9a365e80.png">
 
 
 # Analysis drawn on the effectiveness of each of the test classes
