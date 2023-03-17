@@ -123,6 +123,9 @@ public abstract class DataUtilities {
     public static double calculateColumnTotal(Values2D data, int column) {
         ParamChecks.nullNotPermitted(data, "data");
         double total = 0.0;
+        if (column < 0) {
+        	return total;
+        }
         int rowCount = data.getRowCount();
         for (int r = 0; r < rowCount; r++) {
             Number n = data.getValue(r, column);
