@@ -1419,13 +1419,35 @@ public class RangeTest {
         assertFalse("Killing mutants of intersect function", rangeNomial.intersects(-15, -12));
     }
 	
+	//tests for hashcode()
+	@Test
+	public void testHashCode2() 
+	{
+		
+		Range testRange = new Range(2, 6);
+		int result = testRange.hashCode();
+		assertEquals("Hashcode generated is wrong", -2145910784, result);
+	}
 	
-//	@Test
-//    public void testIntersectsDecrementIncrement()
-//    {
-//        assertFalse("Testing mutants of intersect function", rangeNomial.intersects(-12, -15));
-//    }
-	
+	//-------CombineIgnoreNaN--------
+	 @Test
+    public void testCombineIgnoringNaNNullDoubleDoubleIfNaN()
+    {
+    	Range actual = Range.combineIgnoringNaN(new Range(Double.NaN, Double.NaN), new Range(Double.NaN, Double.NaN));
+    	Range expected = null;
+    	
+      	assertEquals("To kill mutants in if(Double.isNaN(l) && Double.isNaN(u)) line in conbineIgnoreNan by sending NULL ranges as parameters", expected, actual);
+    }
+	 
+
+    @Test
+    public void testCombineIgnoringNaNIfStatementDoubleDoubleNaN()
+    {
+    	Range actual = Range.combineIgnoringNaN(new Range(Double.NaN, Double.NaN), new Range(4,8));
+    	Range expected = new Range(4,8);
+    	
+      	assertEquals("To kill mutants in if(Double.isNaN(l) && Double.isNaN(u)) line in conbineIgnoreNan", expected, actual);
+    }
 	
 	// -----------------------------------------------------------------------------------------
 	// End of Test Code LAB4
