@@ -2,21 +2,20 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:      |     |
+| Group \#:      |  6   |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Student Names: |  Maarya Ahmed   |
+|                |  Jinsu Kwak   |
+|                |  Hannah Son  |
+|                |  Jack Li  |
 
 # Introduction
 
+In this assignment, students were required to learn two important aspects of testing: Mutation testing ang GUI testing on a chosen website. In the mutation testing part of the assignment, it was espected from students to learn how to inject mutation faults in a Java code-base using a mutation testing tool called PIT Mutations. We had to interpret the reported mutation scores and the mutants that were killed and that survived to design new test cases to improve the overall quality of the test suite. In the second part of the assignment, we tested a chosen website using a common way of GUI test automation, record and replay. We learned how to use a very well-known tool for web interface testing (Selenium) and compared it with another alternative.
 
 # Analysis of 10 Mutants of the Range class 
 
 <img width="500" alt="Screen Shot 2023-03-17 at 8 26 33 AM" src="https://user-images.githubusercontent.com/56771715/225933222-13ba4168-3aab-4af2-8fb1-cfbafb466619.png">
-
-
 
 
 # Report all the statistics and the mutation score for each test class
