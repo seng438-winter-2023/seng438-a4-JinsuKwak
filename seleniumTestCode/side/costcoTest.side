@@ -1,0 +1,955 @@
+{
+  "id": "3301b0c6-2d5c-4b4a-a0c7-f0749f3fe701",
+  "version": "2.0",
+  "name": "costcoTest",
+  "url": "https://www.costco.ca/",
+  "tests": [{
+    "id": "fbe44a2c-8cdb-4ec6-8d27-ff36dc111267",
+    "name": "testChangeRegionCAtoUS",
+    "commands": [{
+      "id": "e6bb374f-dff5-48e3-a387-d4cf7c0ad19e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19e82b3d-750d-4aa0-9a90-fa26638fff86",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57f7a5d1-707d-48a2-a539-f259d8e6e59e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=myaccount-react-t",
+      "targets": [
+        ["id=myaccount-react-t", "id"],
+        ["linkText=Account", "linkText"],
+        ["css=#myaccount-react-t", "css:finder"],
+        ["xpath=//a[@id='myaccount-react-t']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[5]/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/LogonForm')])[3]", "xpath:href"],
+        ["xpath=//div[5]/nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b4d95a-e001-4444-a27a-3ba187de4730",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=myaccount-react-t",
+      "targets": [
+        ["id=myaccount-react-t", "id"],
+        ["linkText=Account", "linkText"],
+        ["css=#myaccount-react-t", "css:finder"],
+        ["xpath=//a[@id='myaccount-react-t']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[5]/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/LogonForm')])[3]", "xpath:href"],
+        ["xpath=//div[5]/nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cce9e32-bb75-4d14-a961-a9c9be0c8729",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#cart-t > .co-cart-rwd",
+      "targets": [
+        ["css=#cart-t > .co-cart-rwd", "css:finder"],
+        ["xpath=//a[@id='cart-t']/i", "xpath:idRelative"],
+        ["xpath=//div[5]/nav/ul/li[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "142d9ada-7015-4fe4-bf82-72c3fc74160b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f47f7876-b18a-41f9-88e9-2e62aa11ab80",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f72b23e9-7426-4fd1-8008-c14c91ca0f93",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=United States",
+      "targets": [
+        ["linkText=United States", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'United States')]", "xpath:link"],
+        ["xpath=//a[@onclick='COSTCO.util.checkSsoLogin(this);']", "xpath:attributes"],
+        ["xpath=//div[@id='country-select-popover-container']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.com')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'United States')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ca42df41-47ed-46ec-97c9-c871e78ee1c2",
+    "name": "testChangeRegionCAtoFR",
+    "commands": [{
+      "id": "67253f5b-c1c6-48f0-b832-5dcf430d35d2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fe45537-dbc1-4bbb-b51c-1b459944f222",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28f043ef-2ced-403a-a2e5-b85aa0a4b486",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=country-select",
+      "targets": [
+        ["id=country-select", "id"],
+        ["css=#country-select", "css:finder"],
+        ["xpath=//a[@id='country-select']", "xpath:attributes"],
+        ["xpath=//li[@id='country_dropdown']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3954d9dc-768c-4463-950d-88cb385068c7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=country-select",
+      "targets": [
+        ["id=country-select", "id"],
+        ["css=#country-select", "css:finder"],
+        ["xpath=//a[@id='country-select']", "xpath:attributes"],
+        ["xpath=//li[@id='country_dropdown']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9ee130b-8c74-4d5d-a706-ef730e73ce76",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b50e141-d468-49fc-9089-7e6a82e3069d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09c63c49-1e50-414e-8fce-5c00b6f78f38",
+      "comment": "",
+      "command": "click",
+      "target": "id=country-select",
+      "targets": [
+        ["id=country-select", "id"],
+        ["css=#country-select", "css:finder"],
+        ["xpath=//a[@id='country-select']", "xpath:attributes"],
+        ["xpath=//li[@id='country_dropdown']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cba039b-65ac-498a-9f1a-811486c065e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=country-select",
+      "targets": [
+        ["id=country-select", "id"],
+        ["css=#country-select", "css:finder"],
+        ["xpath=//a[@id='country-select']", "xpath:attributes"],
+        ["xpath=//li[@id='country_dropdown']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2400e34-f359-4752-8c52-c01fe375219a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=France",
+      "targets": [
+        ["linkText=France", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'France')]", "xpath:link"],
+        ["xpath=//div[@id='country-select-popover-container']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.fr')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'France')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d51a1e2c-db70-4872-a27d-5c1fa917cf14",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e0e2dce0-a493-4521-ba79-43a431799e13",
+    "name": "testChangeRegionCAtoCA",
+    "commands": [{
+      "id": "1fba0e73-df4c-4df5-b6da-26ec89be09b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6dbf656-2ac1-4baf-ac5e-ad1f796b87db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "960a4d1b-04ff-4260-84f8-daf084412d21",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b901baf6-06c4-4eba-ac88-296cc56124eb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a633a542-4126-4c2a-995e-3d1edbc486a1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#country-select > span:nth-child(1)",
+      "targets": [
+        ["css=#country-select > span:nth-child(1)", "css:finder"],
+        ["xpath=//a[@id='country-select']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c23516c2-7f15-4cfb-b66e-77f7ce5951c1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#country-select > span:nth-child(1)",
+      "targets": [
+        ["css=#country-select > span:nth-child(1)", "css:finder"],
+        ["xpath=//a[@id='country-select']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c06edbd2-aff2-401e-928b-b906e8cf8595",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=country-select",
+      "targets": [
+        ["id=country-select", "id"],
+        ["css=#country-select", "css:finder"],
+        ["xpath=//a[@id='country-select']", "xpath:attributes"],
+        ["xpath=//li[@id='country_dropdown']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d00506ae-5ce6-43ae-9113-89f261a27a63",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=country-select",
+      "targets": [
+        ["id=country-select", "id"],
+        ["css=#country-select", "css:finder"],
+        ["xpath=//a[@id='country-select']", "xpath:attributes"],
+        ["xpath=//li[@id='country_dropdown']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6071288f-34a2-49bd-b6f3-550baebab7cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18d02e3f-49ac-4a0c-ba76-192e7a6528ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22d1b3b6-0afd-47fc-818c-2409f565fc1d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Canada",
+      "targets": [
+        ["linkText=Canada", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Canada')]", "xpath:link"],
+        ["xpath=(//a[@onclick='COSTCO.util.checkSsoLogin(this);'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='country-select-popover-container']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.ca')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "77958ebd-ca78-4c13-a537-d6ec783e44a3",
+    "name": "testChangeRegionUStoCA",
+    "commands": [{
+      "id": "cbf92a71-0c02-4d5d-b0ef-1578f252f7f5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "798d1cf6-b850-4fc8-9423-b80c3d0414cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3692b30-b5f9-4f28-9a51-155b675cffe4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cdcc1dd-29d5-4942-96c1-25091a49eda1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8666b2f-63e4-42dc-b756-dfea7220d950",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b43272-0a71-4e06-912a-93e33dbcfff8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d59ea49-4d26-4490-be71-36311dee6790",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Canada",
+      "targets": [
+        ["linkText=Canada", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Canada')]", "xpath:link"],
+        ["xpath=(//a[@onclick='COSTCO.util.checkSsoLogin(this);'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='country-select-popover-container']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.ca')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95912129-ec3b-4235-8f68-0fa878bad4e7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#warehouse-locations-t > .top-button-title",
+      "targets": [
+        ["css=#warehouse-locations-t > .top-button-title", "css:finder"],
+        ["xpath=//a[@id='warehouse-locations-t']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/nav/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93782eae-fc9c-4fbd-80cb-159aff4531b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1984c826-49ca-494d-bbf4-7f976168211d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11dae447-708f-481c-910b-b170d25545d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19d078c3-0ed2-4145-9469-adf43d657451",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d166a75-43df-432a-b96b-8af76cf059b0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#country-select > .co-arrow-right",
+      "targets": [
+        ["css=#country-select > .co-arrow-right", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9efeec97-4305-4f2b-9da6-53bc23863a68",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=United States",
+      "targets": [
+        ["linkText=United States", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'United States')]", "xpath:link"],
+        ["xpath=//a[@onclick='COSTCO.util.checkSsoLogin(this);']", "xpath:attributes"],
+        ["xpath=//div[@id='country-select-popover-container']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.com')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'United States')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de7f9ca-efc3-47a2-bddc-feb41667b5b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-arrow-right:nth-child(3)",
+      "targets": [
+        ["css=.co-arrow-right:nth-child(3)", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95106794-3d0c-4dd9-9743-eb68144e487c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-arrow-right:nth-child(3)",
+      "targets": [
+        ["css=.co-arrow-right:nth-child(3)", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aa320ed-972f-48d5-a233-d543c72c841a",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.co-arrow-right:nth-child(3)",
+      "targets": [
+        ["css=.co-arrow-right:nth-child(3)", "css:finder"],
+        ["xpath=//a[@id='country-select']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d314d1b-6d19-4d89-9b1e-4d75a9312b3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Canada",
+      "targets": [
+        ["linkText=Canada", "linkText"],
+        ["css=#country-select-popover-container li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Canada')]", "xpath:link"],
+        ["xpath=(//a[@onclick='COSTCO.util.checkSsoLogin(this);'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='country-select-popover-container']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.ca')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Canada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ef7d20d-6c8e-4db8-ab8a-432cd4c45135",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "36026a24-9a5e-461a-a16a-8f5371fc7d95",
+    "name": "testItemSortPriceHightoLow",
+    "commands": [{
+      "id": "3e88676c-9caf-499d-b564-6c0f8318fff9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b5ed818-dd37-42ab-bc19-e84e54bfc124",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8ad451c-a69d-4423-8d10-bd3218cfc7d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f7cc493-fe1a-4f8c-8b3d-fd89ecf56ae1",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "labtop"
+    }, {
+      "id": "4f52434c-d46a-4cab-9cee-6cbec094848a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-search-thin",
+      "targets": [
+        ["css=.co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e206b8ec-bf21-4925-8ab9-24b0d7d6c81d",
+      "comment": "",
+      "command": "select",
+      "target": "id=sort_by",
+      "targets": [],
+      "value": "label=Price (High to Low)"
+    }, {
+      "id": "722cbd2d-08e4-42fd-bc50-4698961680e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='item_location_pricing_salePrice desc']", "xpath:attributes"],
+        ["xpath=//select[@id='sort_by']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'\n\t\t\t\t\t\t\t\t\tPrice (High to Low)\n\t\t\t\t\t\t\t\t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "85f47a8e-58cf-439e-8a2c-f7c5758543b2",
+    "name": "testItemSortPriceLowtoHigh",
+    "commands": [{
+      "id": "80c9bcbf-0ef5-443c-a5ce-7b8834a82f87",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "343c52a8-7108-4693-8e66-392a19b263aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff08a0c0-2ba2-4a1b-ac5c-04503974cabc",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d98f819-91b1-4bb4-a0cc-192d8cdba440",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "labtop"
+    }, {
+      "id": "bc3ff3df-6032-41ca-9391-ab00ce3c6c1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-search-thin",
+      "targets": [
+        ["css=.co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18fb5e86-f973-4505-b73a-cef343d50dac",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-results",
+      "targets": [
+        ["id=search-results", "id"],
+        ["css=#search-results", "css:finder"],
+        ["xpath=//div[@id='search-results']", "xpath:attributes"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddf6dc5b-9dbf-4d1a-9547-d3b8fbc6b0a6",
+      "comment": "",
+      "command": "select",
+      "target": "id=sort_by",
+      "targets": [],
+      "value": "label=Price (Low to High)"
+    }, {
+      "id": "e06127dc-9efd-4115-b78a-d0c45cc49f46",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='item_location_pricing_salePrice asc']", "xpath:attributes"],
+        ["xpath=//select[@id='sort_by']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'\n\t\t\t\t\t\t\t\t\tPrice (Low to High)\n\t\t\t\t\t\t\t\t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0d793515-7f86-46f1-9359-8c5d956f4b70",
+    "name": "testItemSortNewest",
+    "commands": [{
+      "id": "99cdb4b9-1514-4c1f-b0da-1ae207eef82d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc6c1b50-5113-467e-84ec-83b35d89d7e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "697f30d2-0ce6-4a38-b928-db1d1523375b",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f0a95c3-a699-42d2-808b-9067d4b31497",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "labtop"
+    }, {
+      "id": "07d404e5-7ecb-440c-9f8e-c34dd67fb250",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-search-thin",
+      "targets": [
+        ["css=.co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd39ef5d-7793-4168-80ff-9907068f3f42",
+      "comment": "",
+      "command": "select",
+      "target": "id=sort_by",
+      "targets": [],
+      "value": "label=Newest"
+    }, {
+      "id": "b3092bfd-b5df-4a21-a619-9218b3373b99",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(5)",
+      "targets": [
+        ["css=option:nth-child(5)", "css:finder"],
+        ["xpath=//option[@value='item_startDate desc']", "xpath:attributes"],
+        ["xpath=//select[@id='sort_by']/option[5]", "xpath:idRelative"],
+        ["xpath=//option[5]", "xpath:position"],
+        ["xpath=//option[contains(.,'\n\t\t\t\t\t\t\t\t\tNewest\n\t\t\t\t\t\t\t\t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cffdd86a-a762-4fc5-a253-a34b3d897eca",
+    "name": "testItemSortRatings",
+    "commands": [{
+      "id": "179eb71a-46bb-4ee2-bfba-d6a3f4012f19",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e206346-1597-4098-bf9a-8198a346fdb9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84461d70-066d-4eb3-8229-349eda7196c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f650653d-13c6-4f79-8583-e2797f8fd48d",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "labtop"
+    }, {
+      "id": "ea5cd2d8-23e3-45ed-94fa-976818cf6f13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-search-thin",
+      "targets": [
+        ["css=.co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fe8a963-3767-49bb-a361-993dc927fd3c",
+      "comment": "",
+      "command": "select",
+      "target": "id=sort_by",
+      "targets": [],
+      "value": "label=Ratings (High to Low)"
+    }, {
+      "id": "13e57db3-e2a6-4c53-92bd-6007c100959d",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(4)",
+      "targets": [
+        ["css=option:nth-child(4)", "css:finder"],
+        ["xpath=//option[@value='item_ratings desc']", "xpath:attributes"],
+        ["xpath=//select[@id='sort_by']/option[4]", "xpath:idRelative"],
+        ["xpath=//option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'\n\t\t\t\t\t\t\t\t\tRatings (High to Low)\n\t\t\t\t\t\t\t\t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "30c7d5f3-9f5b-4eae-9515-e6c17cb5db7c",
+    "name": "testItemSortMostViewed",
+    "commands": [{
+      "id": "bdf143d7-fafc-4bdc-8a58-da9280a0c587",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec3909aa-55f4-4bee-bb9d-084f224aa52a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1017x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b034ce69-51e0-4005-9da2-b47ca18d7998",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eefc8e01-8dbf-447b-9034-59fffdda32aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "labtop"
+    }, {
+      "id": "617d8b8f-6a3e-460c-b181-4ff8b44b3064",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-search-thin",
+      "targets": [
+        ["css=.co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd3cfb6-0a0a-4e87-b137-905f0a350978",
+      "comment": "",
+      "command": "select",
+      "target": "id=sort_by",
+      "targets": [],
+      "value": "label=Most Viewed"
+    }, {
+      "id": "f4c64dbb-8bef-43eb-8122-c9b1b0af7859",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(6)",
+      "targets": [
+        ["css=option:nth-child(6)", "css:finder"],
+        ["xpath=//option[@value='item_page_views desc']", "xpath:attributes"],
+        ["xpath=//select[@id='sort_by']/option[6]", "xpath:idRelative"],
+        ["xpath=//option[6]", "xpath:position"],
+        ["xpath=//option[contains(.,'\n\t\t\t\t\t\t\t\t\tMost Viewed\n\t\t\t\t\t\t\t\t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [],
+  "urls": ["https://www.costco.ca/"],
+  "plugins": []
+}
