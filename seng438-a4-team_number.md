@@ -30,6 +30,13 @@ In this assignment, students were required to learn two important aspects of tes
 
 <img width="500" alt="Screen Shot 2023-03-17 at 11 24 49 AM" src="https://user-images.githubusercontent.com/56771715/225976617-14195581-a243-4517-85dc-6033f7e0e157.png">
 
+    DataUtilities Class:
+ 
+        Before:
+        <img width="500" alt="Screen Shot 2023-03-17 at 10 53 36 AM" src="https://user-images.githubusercontent.com/81532489/226078541-a6adf925-206c-40fe-8f3b-85e0c71745a8.png">
+
+
+        After:
 
 
 # Analysis drawn on the effectiveness of each of the test classes
