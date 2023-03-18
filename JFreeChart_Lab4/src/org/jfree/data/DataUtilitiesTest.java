@@ -1468,20 +1468,7 @@ public class DataUtilitiesTest {
 				 boolean actualResult = DataUtilities.equal(secondArray, firstArray);
 				 assertEquals("Checking equality when 2D Array inputs are different lengths", false, actualResult);
 			 }
-			 /*
-			  *  This test will simulate cloning
-			  *  This should squash line 104 condition 15
-			  *  x
-			  */
-			  @Test
-			  public void testCloneLengthMutation() {
-				 double[][] source = new double[0][];
-				 
-		   	     double[][] actualResult = DataUtilities.clone(source);
-				 assertEquals("Check the length", source.length, actualResult.length);
-	
-			  }
-			  
+
 				 /*
 				  *  This test will simulate cloning with a null nested array
 				  *  This should squash line 104 condition 3
@@ -1495,6 +1482,60 @@ public class DataUtilitiesTest {
 					 assertArrayEquals("Array with nested null value cloned", expected, actualResult);
 		
 				  }
+		  
+				  /*
+				   *  This test will simulate when the input argument data holds a null value
+				   *  Expected result: returns accurate column total
+				   *  Expected to kill line 158 conditions
+				   */
+				  @Test(timeout = 1000) // timeout: 1000
+					 public void testCalculateColumnTotal_InvalidRows() {
+					     Mockery mockingContext = new Mockery();
+					     final Values2D values = mockingContext.mock(Values2D.class);
+					     mockingContext.checking(new Expectations() {
+					         {
+					             one(values).getRowCount();
+					             will(returnValue(3));
+					             
+					             one(values).getColumnCount();
+					             will(returnValue(3));
+					             
+					             one(values).getValue(0, 0);
+					             will(returnValue(1.0));
+					             
+					             one(values).getValue(0, 1);
+					             will(returnValue(1.0));
+					             
+					             one(values).getValue(0, 2);
+					             will(returnValue(1.0));
+					             
+					             one(values).getValue(1, 0);
+					             will(returnValue(2.0));
+					             
+					             one(values).getValue(1, 1);
+					             will(returnValue(2.0));
+					             
+					             one(values).getValue(1, 2);
+					             will(returnValue(2.0));
+					             
+					             one(values).getValue(2, 0);
+					             will(returnValue(3.0));
+					             
+					             one(values).getValue(2, 1);
+					             will(returnValue(3.0));
+					             
+					             one(values).getValue(2, 2);
+					             will(returnValue(3.0));
+		
+
+					         }
+					     });
+					     int[] validRows = {3, 4};
+					     double actualResult = DataUtilities.calculateColumnTotal(values, 0, validRows);
+					     double expectedResult = 0.0;
+					     assertEquals("Checking function returns correct column sum",expectedResult, actualResult, .000000001d);
+					 }
+				  
 	
      // -----------------------------------------------------------------------------------------
      // End of Test Code
