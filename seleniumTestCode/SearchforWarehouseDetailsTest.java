@@ -37,7 +37,7 @@ public class SearchforWarehouseDetailsTest {
     driver.quit();
   }
   @Test
-  public void searchforWarehouseDetails() {
+  public void searchforWarehouseDetailsValidInput() {
     driver.get("https://www.costco.ca/");
     driver.manage().window().setSize(new Dimension(1381, 877));
     driver.findElement(By.linkText("Locations")).click();
@@ -59,6 +59,18 @@ public class SearchforWarehouseDetailsTest {
     }
     {
       List<WebElement> elements = driver.findElements(By.id("labelCanvasId"));
+      assert(elements.size() > 0);
+    }
+  }
+  
+  @Test
+  public void searchforWarehouseNoInput() {
+    driver.get("https://www.costco.ca/");
+    driver.manage().window().setSize(new Dimension(1381, 877));
+    driver.findElement(By.linkText("Locations")).click();
+    driver.findElement(By.cssSelector(".input-group-btn > .btn-primary")).click();
+    {
+      List<WebElement> elements = driver.findElements(By.cssSelector("html"));
       assert(elements.size() > 0);
     }
   }
