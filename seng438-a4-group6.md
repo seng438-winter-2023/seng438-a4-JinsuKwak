@@ -77,8 +77,8 @@ Disadvantages of Mutation Testing
 | Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | 
 | Change Delivery Location | Click on Delivery Location, type "PostalCode", click Change Delivery Location button, where PostalCode is 6 digit letter with [A1A 1A1] format|
 | Change Region | Click current region (top right conner CA in most cases) Click desired region to change |
-| Add Item to Cart | |
-| Sign In | |
+| Add Item to Cart | Sign in, Navigate to item, add to shopping cart |
+| Sign In |Navigate to Sign in, enter credentials, attempt to log in |
 | Register |Navigate to Sign up page, enter values for email, password, confirm password and press continue |
 | Compare Product |Click a section such as grocery, click item, add to compare, check hide, remove, remove all functionalities |
  
