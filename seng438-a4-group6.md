@@ -108,11 +108,11 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Add Item to Cart | | | |
 | Sign In | | | | 
 | Sign In | | | | 
-| Register | | | |
-| Register | | | |
-| Register | | | |
-| Register | | | |
-| Register | | | |
+| Register | Navigate to Register page | Register page exists| Assert that Sign Up text is displayed|
+| Register | Navigate to Register Page, Attempt to register existing account| Error preventing from registering| Assert "The email address you entered is already registered"|
+| Register | Navigate to Register Page, enter invalid email| Message prompt to enter valid email| Assert "Enter a valid email address" is displayed|
+| Register | Navigate to Register Page, enter invalid password | Message prompt to use better password| Assert "Use between 8 and 16 characters"|
+| Register | Navigate to Register Page, attempt to register with no input| Require all fields| Assert "Email is required", "Password is required", Confirm password is required |
 | Compare Product | | | |
 | Compare Product | | | |
 | Compare Product | | | |
