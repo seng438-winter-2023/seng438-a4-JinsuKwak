@@ -39,6 +39,12 @@ In this assignment, students were required to learn two important aspects of tes
 # A discussion of what could have been done to improve the mutation score of the test suites
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
+Mutatation testing is needed because it tells us the quality of our test suite and how good it is at catching bugs.
+
+Advantages of Mutation Testing
+
+
+Disadvantages of Mutation Testing
 
 # Explain your SELENUIM test case design process
 
