@@ -1,0 +1,222 @@
+{
+  "id": "ef7e96b0-06db-4deb-afcc-0715ccef00d6",
+  "version": "2.0",
+  "name": "costcoSignIn",
+  "url": "https://www.costco.ca",
+  "tests": [{
+    "id": "0158937d-2198-4280-95f1-5fb3592d5758",
+    "name": "SignInInvalidCredential",
+    "commands": [{
+      "id": "f11d3507-405e-47f0-9277-63fa6eb85ed6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbbc96fb-1919-40ab-b318-25a6de8aaecd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "999x729",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52d6bb98-df2e-4ed3-a66b-2d4d02005a41",
+      "comment": "",
+      "command": "click",
+      "target": "css=#myaccount-react-t > .top-button-title",
+      "targets": [
+        ["css=#myaccount-react-t > .top-button-title", "css:finder"],
+        ["xpath=//a[@id='myaccount-react-t']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/nav/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62cc7e1c-2450-4a72-9c00-1a8545372697",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb3bf5f-4b62-417d-8f59-b74438ba8d3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "marrya251@gmail.com"
+    }, {
+      "id": "40b8715d-ae9c-4763-867a-5b75f91cf705",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "867859c9-4d1a-46d4-8e58-dff7a941ced8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "0ff2d90f-f806-4bec-8d8e-eaede81fa197",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a99f8abc-a332-412a-b5ab-c1070a5f53d1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.pageLevel > p",
+      "targets": [],
+      "value": "We can't seem to find your account"
+    }, {
+      "id": "c4dbd3f9-e74e-493f-a2f8-5715e45bb2af",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "69ecda1d-1a89-4bc9-8098-f460216345ce",
+    "name": "SignInValidCredential",
+    "commands": [{
+      "id": "e7e11358-05b7-4c61-a930-e4a4257e0ce9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4baec8d-eb1d-4371-b693-f33c4c4cc497",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "999x729",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a3aede1-eeec-4a08-95ab-a26a48a8e901",
+      "comment": "",
+      "command": "click",
+      "target": "css=#myaccount-react-t > .top-button-title",
+      "targets": [
+        ["css=#myaccount-react-t > .top-button-title", "css:finder"],
+        ["xpath=//a[@id='myaccount-react-t']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/nav/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d13f337e-cd73-49b8-913c-b18fb5ce7cd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9080d919-d0c8-4cba-ab96-234d48b61878",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "marrya251@gmail.com"
+    }, {
+      "id": "18636e9a-2d9d-48fa-b372-b5fd4ab74011",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4e46bad-a33d-414e-8015-a0ba36904b13",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "a84b8334-29d9-4d55-8241-201ed261fc67",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7347ae1a-27fe-401c-96c0-abed44906422",
+    "name": "SignIn",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0158937d-2198-4280-95f1-5fb3592d5758", "69ecda1d-1a89-4bc9-8098-f460216345ce"]
+  }],
+  "urls": ["https://www.costco.ca/"],
+  "plugins": []
+}
