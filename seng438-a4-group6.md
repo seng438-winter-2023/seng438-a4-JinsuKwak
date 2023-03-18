@@ -79,7 +79,9 @@ Disadvantages of Mutation Testing
 
 # Explain the use of assertions and checkpoints
 
-In Selenium, the assertions are checkpoints that are used to make sure that the SUT is working as intended. For example, you can assert whether the link on a web page is correct or not. When running a test case, if the condition of the assertion is not met, the test will immediately fail.
+In Selenium, the assertions are checkpoints that are used to make sure that the SUT is working as intended. For example, you can assert whether the web page displaying correct links or not or checking the presence or absence of an element, and ensuring that a specific element is visible or clickable. If an assertion fails, the test will stop executing and report an error message.
+
+Checkpoints, on the other hand, are used to verify that a specific value or state is achieved during the test. Checkpoints are typically implemented using the "verify" command. This command checks a specific property or attribute of an element and compares it to an expected value. If the actual value matches the expected value, the test continues. If not, the test stops executing and reports an error message.
 
 
 # How did you test each functionaity with different test data
