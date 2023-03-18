@@ -42,9 +42,14 @@ In this assignment, students were required to learn two important aspects of tes
 Mutatation testing is needed because it tells us the quality of our test suite and how good it is at catching bugs.
 
 Advantages of Mutation Testing
-
+     -Mutation Testing is automated 
+     -Mutation Testing gives us the mutation score, which tells us when to stop testing and which test suite's quality is better
 
 Disadvantages of Mutation Testing
+     -Mutation Testing is time consuming
+     -The presence of equivalent mutants (there tends to be a lot of equivalent mutants in SUTs)
+
+
 
 # Explain your SELENUIM test case design process
 
@@ -64,4 +69,4 @@ Some difficulties encountered in this assignment is firstly, running the PIT mut
 
 # Comments/feedback on the lab itself
 
-This assignment took a long time for us to understand what exactly needs to be done. It was also hard because the PIT Mutations took a very long time       to execute and compile. Overall, the assignment was effective in creating tasks that demonstrated Mutation and GUI testing.
+This assignment took a long time for us to understand what exactly needs to be done. It was also hard because the PIT Mutations took a very long time to execute and compile. Overall, the assignment was effective in creating tasks that demonstrated Mutation and GUI testing.
