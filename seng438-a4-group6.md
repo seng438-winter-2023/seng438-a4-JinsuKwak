@@ -78,7 +78,7 @@ Disadvantages of Mutation Testing
 | Change Delivery Location | Click on Delivery Location, type "PostalCode", click Change Delivery Location button, where PostalCode is 6 digit letter with [A1A 1A1] format|
 | Change Region | Click current region (top right conner CA in most cases) Click desired region to change |
 | Add Item to Cart | |
-| Sign Up | |
+| Sign In | |
 | Register | |
 | Compare Product | |
  
@@ -106,8 +106,8 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Change Region | previous region selected: Canada, desired region to change: France | reload the page with desired region "France" and corresponding language settings | assert text "France" is appeared on screen |
 | Add Item to Cart | | | |
 | Add Item to Cart | | | |
-| Sign Up | | | | 
-| Sign Up | | | | 
+| Sign In | | | | 
+| Sign In | | | | 
 | Register | | | |
 | Register | | | |
 | Register | | | |
