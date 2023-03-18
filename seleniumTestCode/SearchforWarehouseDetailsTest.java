@@ -63,14 +63,14 @@ public class SearchforWarehouseDetailsTest {
     }
   }
   
-  @Test
+   @Test
   public void searchforWarehouseNoInput() {
     driver.get("https://www.costco.ca/");
     driver.manage().window().setSize(new Dimension(1381, 877));
     driver.findElement(By.linkText("Locations")).click();
     driver.findElement(By.cssSelector(".input-group-btn > .btn-primary")).click();
     {
-      List<WebElement> elements = driver.findElements(By.cssSelector("html"));
+      List<WebElement> elements = driver.findElements(By.cssSelector("#error-container > .form-group"));
       assert(elements.size() > 0);
     }
   }
