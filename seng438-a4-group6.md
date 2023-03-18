@@ -75,6 +75,8 @@ Disadvantages of Mutation Testing
 | --------------|--------------------|
 | Search for a product | Click on search bar, type "Tent", click on search button, click on product |
 | Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | 
+| Change Delivery Location | Click on Delivery Location, type "PostalCode", click Change Delivery Location button, where PostalCode is 6 digit letter with [A1A 1A1] format|
+| Change Region | Click current region (top right conner CA in most cases) Click desired region |
  
 
 # Explain the use of assertions and checkpoints
@@ -92,7 +94,7 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Search for a product | Click on search button (no keyword in search bar) | Nothing happens | Assert that page is the same |
 | Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | Shows warehouse title, description, and map | Assert that warehouse title and map image are there |
 | Search for a warehouse | Click on locations link, click on find button (no keyword in search bar) | Error Message Appears | Assert that error message appears |
-
+| Change Delivery Location Valid Canada | 
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
