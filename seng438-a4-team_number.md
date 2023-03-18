@@ -61,9 +61,11 @@ Disadvantages of Mutation Testing
 
 # Explain your SELENUIM test case design process
 
- | Functionality |       |
-----------------------------------
- Search for a product
+| Functionality | Input Sequence | Expected Ouput | Assertions |
+| --------------|----------------|----------------|------------|
+| Search for a product | Click on search bar, type "Tent", click on search button, click on product | Shows product title and image | Assert that product title and image are there|
+| Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | Shows warehouse title, description, and map | Assert that warehouse title and map image are there |
+ 
 
 # Explain the use of assertions and checkpoints
 
