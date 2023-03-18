@@ -165,64 +165,22 @@
     }, {
       "id": "31c42513-4f26-4edb-be7a-7d9fc66ebe13",
       "comment": "",
-      "command": "assertText",
+      "command": "assertValue",
       "target": "id=quantity_1",
-      "targets": [
-        ["id=quantity_1", "id"],
-        ["name=quantity_1", "name"],
-        ["css=#quantity_1", "css:finder"],
-        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
-        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/input", "xpath:idRelative"],
-        ["xpath=//div/div/div/div/div/div[2]/div/div/input", "xpath:position"]
-      ],
+      "targets": [],
       "value": "2"
-    }, {
-      "id": "26327d57-b757-4f29-a0d1-ec0875972be0",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "id=remove-serial_1927718590",
-      "targets": [
-        ["id=remove-serial_1927718590", "id"],
-        ["css=#remove-serial_1927718590", "css:finder"],
-        ["xpath=//span[@id='remove-serial_1927718590']", "xpath:attributes"],
-        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div[4]/button/span", "xpath:idRelative"],
-        ["xpath=//div/div[4]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Remove')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "fb22d038-f92d-401f-9a73-65e959b3f68a",
-      "comment": "",
-      "command": "click",
-      "target": "id=remove-serial_1927718590",
-      "targets": [
-        ["id=remove-serial_1927718590", "id"],
-        ["css=#remove-serial_1927718590", "css:finder"],
-        ["xpath=//span[@id='remove-serial_1927718590']", "xpath:attributes"],
-        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div[4]/button/span", "xpath:idRelative"],
-        ["xpath=//div/div[4]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Remove')]", "xpath:innerText"]
-      ],
-      "value": ""
     }, {
       "id": "94304add-eccc-49b9-bb9e-09282eada4d6",
       "comment": "",
-      "command": "mouseOut",
-      "target": "id=remove-serial_1927718590",
-      "targets": [
-        ["id=remove-serial_1927718590", "id"],
-        ["css=#remove-serial_1927718590", "css:finder"],
-        ["xpath=//span[@id='remove-serial_1927718590']", "xpath:attributes"],
-        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div[4]/button/span", "xpath:idRelative"],
-        ["xpath=//div/div[4]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Remove')]", "xpath:innerText"]
-      ],
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],
   "suites": [{
     "id": "7f81d82c-ad42-4f74-bf48-f2a5dfbe47ef",
-    "name": "Default Suite",
+    "name": "addCart",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
