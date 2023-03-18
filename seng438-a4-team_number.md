@@ -59,7 +59,10 @@ Disadvantages of Mutation Testing
 
 # Explain the use of assertions and checkpoints
 
-# how did you test each functionaity with different test data
+In Selenium, the assertions are checkpoints that are used to make sure that the SUT is working as intended. For example, you can assert whether the link on a web page is correct or not. When running a test case, if the condition of the assertion is not met, the test will immediately fail.
+
+
+# How did you test each functionaity with different test data
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
