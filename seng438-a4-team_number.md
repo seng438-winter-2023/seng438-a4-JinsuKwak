@@ -36,9 +36,13 @@ In this assignment, students were required to learn two important aspects of tes
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
+Equivalent mutants distort the accuracy of mutation scores. The presence of equivalent mutants makes the test suite's quality look lower than it actually is, when in fact it doesn't since no tests can actually detect them.
+
+
 # A discussion of what could have been done to improve the mutation score of the test suites
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
+
 Mutatation testing is needed because it tells us the quality of our test suite and how good it is at catching bugs.
 
 Advantages of Mutation Testing
@@ -56,6 +60,10 @@ Disadvantages of Mutation Testing
 
 
 # Explain your SELENUIM test case design process
+
+ | Functionality |       |
+----------------------------------
+ Search for a product
 
 # Explain the use of assertions and checkpoints
 
