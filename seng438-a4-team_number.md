@@ -40,6 +40,10 @@ In this assignment, students were required to learn two important aspects of tes
 
 
 # Analysis drawn on the effectiveness of each of the test classes
+For the Range class, our test suites were somewhat effective, we started out with 87% line coverage as well as 66% mutation coverage . This means that there were tests for the majority of the code in the methods. Carrying out mutation testing allow us to create tests that we did not come up with initially, strengthening the effectiveness of our test suite. 
+
+As for the DataUtilities class, we Started off with 99% line coverage and 89% mutation coverage, concluding that our test suite for DataUtilities was highly effective. Increasing the mutation coverage above 90% would be very difficult in this case, as many of the mutants created may not be applicable or are equivalent mutants.
+
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
