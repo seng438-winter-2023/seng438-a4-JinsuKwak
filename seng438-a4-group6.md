@@ -94,8 +94,12 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Search for a product | Click on search button (no keyword in search bar) | Nothing happens | Assert that page is the same |
 | Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | Shows warehouse title, description, and map | Assert that warehouse title and map image are there |
 | Search for a warehouse | Click on locations link, click on find button (no keyword in search bar) | Error Message Appears | Assert that error message appears |
-| Change Delivery Location | intput PostalCode = T2N 1N4, valid format [A1A 1A1] and exist postal code in Canada | Delivery location changes and display changed delivery location |
+| Change Delivery Location | intput PostalCode = T2N 1N4, valid format [A1A 1A1] and exist postal code in Canada | Delivery location changes and display changed delivery location | assert text "A2S 2G1" which is new delivery location |
 | Change Delivery Location | intput PostalCode = A2S 2G1, valid format [A1A 1A1] but not exist postal code in Canada, it is unable to test non valid format because GUI blocks if format does not meet | Display warning "Please enter a valid Postal code." | assert text "Please enter a valid Postal code." is appeared on screen" |
+| Change Region | previous region selected: Canada, desired region to change: Canada | reload the page with desired region "CA" and corresponding language settings | assert text "CA" is appeared on screen" |
+| Change Region | previous region selected: Canada, desired region to change: United States | reload the page with desired region "US" and corresponding language settings | assert text "US" is appeared on screen" |
+| Change Region | previous region selected: United States, desired region to change: Canada | reload the page with desired region "CA" and corresponding language settings | assert text "CA" is appeared on screen" |
+| Change Region | previous region selected: Canada, desired region to change: France | reload the page with desired region "France" and corresponding language settings | assert text "France" is appeared on screen" |
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
