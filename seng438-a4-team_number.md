@@ -47,7 +47,7 @@ Equivalent mutants distort the accuracy of mutation scores. The presence of equi
 
 
 # A discussion of what could have been done to improve the mutation score of the test suites
-
+Since the mutation coverage was determined off the tests we created in labs 2 and 3, we were able to have generally effective test suites for both of the classes Range and DataUtilities. DataUtilities had a close to 100% mutation coverage, which meant that it would be near impossible to increase the coverage by a large amount due to non-applicable mutants or equivalent mutants. Nevertheless, we looked at the mutation summaries for the statements and worked backwards to attempt to increase the coverage for DataUtilities. For Range, the same method was employed to eliminate some surviving mutants. In the future, the same process can likely be applied to eliminate more mutants to increases the mutation score.
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
 Mutatation testing is needed because it tells us the quality of our test suite and how good it is at catching bugs.
