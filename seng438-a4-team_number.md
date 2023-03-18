@@ -51,7 +51,7 @@ Disadvantages of Mutation Testing
 
      -Mutation Testing is time consuming
      
-     -The presence of equivalent mutants (there tends to be a lot of equivalent mutants in SUTs)
+     -The presence of equivalent mutants (there tends to be a lot of equivalent mutants in SUTs, and as we know, equivalent mutants cannot be killed)
 
 
 
