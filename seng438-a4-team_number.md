@@ -67,17 +67,25 @@ In Selenium, the assertions are checkpoints that are used to make sure that the 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 Advantages of Selenium:
+
     -It is supported across multiple operating systems and browsers
 
+
 Disadvantages of Selenium:
+
     -Can only test web applications
 
+
 Advantages of Sikulix:
+
     -Can automate Flash objects
+    
     -Can automate desktop applications
 
 Disadvantages of Sikulix:
+
     -It has issues with cross-browser testing
+
 
 # How the team work/effort was divided and managed
 
