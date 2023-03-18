@@ -26,18 +26,21 @@ public class SearchforProductTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
+  
   @Before
   public void setUp() {
     driver = new FirefoxDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
+  
   @After
   public void tearDown() {
     driver.quit();
   }
+  
   @Test
-  public void searchforProduct() {
+  public void searchforProductValidInput() {
     driver.get("https://www.costco.ca/");
     driver.manage().window().setSize(new Dimension(671, 850));
     driver.findElement(By.id("search-field")).click();
@@ -57,4 +60,13 @@ public class SearchforProductTest {
       assert(elements.size() > 0);
     }
   }
+  
+  @Test
+  public void searchforProductNoInput() {
+    driver.get("https://www.costco.ca/");
+    driver.manage().window().setSize(new Dimension(695, 864));
+    element = driver.findElement(By.cssSelector(".btn:nth-child(4) > .co-search-thin"));
+    Assert.AreEquals(false, element.isEnabled());
+  }
+  
 }
