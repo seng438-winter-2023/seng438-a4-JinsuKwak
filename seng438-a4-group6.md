@@ -113,10 +113,12 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Register | Navigate to Register Page, enter invalid email| Message prompt to enter valid email| Assert "Enter a valid email address" is displayed|
 | Register | Navigate to Register Page, enter invalid password | Message prompt to use better password| Assert "Use between 8 and 16 characters"|
 | Register | Navigate to Register Page, attempt to register with no input| Require all fields| Assert "Email is required", "Password is required", Confirm password is required |
-| Compare Product | | | |
-| Compare Product | | | |
-| Compare Product | | | |
-| Compare Product | | | |
+| Compare Product | Find two items, add to compare, remove one from the pop up| Only one item is removed| Assert the remove button element does not exist for that item|
+| Compare Product | Find two items, add to compare, press remove all button| All items are removed and the pop-up is removed| Assert the remove does not exist|
+| Compare Product | Find two items, add to compare, Press hide| the pop-up should be minimized| Assert show is now displayed on the pop-up|
+| Compare Product | Find two items, add to compare, Press hide then press show| The pop-up should reappear| Assert Hide is now displayed again |
+| Compare Product | Find two items, add to compare, press compare| The items will be compared| Assert the item names are present on the compare page |
+| Compare Product | Find one item, add to compare,  press compare| The items will be compared| Assert Compare Product text is present on the compare page |
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
