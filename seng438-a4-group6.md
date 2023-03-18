@@ -104,9 +104,8 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Change Region | previous region selected: Canada, desired region to change: United States | reload the page with desired region "US" and corresponding language settings | assert text "US" is appeared on screen |
 | Change Region | previous region selected: United States, desired region to change: Canada | reload the page with desired region "CA" and corresponding language settings | assert text "CA" is appeared on screen |
 | Change Region | previous region selected: Canada, desired region to change: France | reload the page with desired region "France" and corresponding language settings | assert text "France" is appeared on screen |
-| Add Item to Cart | | | |
-| Add Item to Cart | | | |
-| Sign In | | | | 
+| Add Item to Cart | Find item, click on item, press add to cart button| Item is added to cart| The cart size is > 0|
+| Sign In | Enter username and password, press next| Log in sucessfully| signInName size is >0, password size>0| 
 | Sign In | | | | 
 | Register | Navigate to Register page | Register page exists| Assert that Sign Up text is displayed|
 | Register | Navigate to Register Page, Attempt to register existing account| Error preventing from registering| Assert "The email address you entered is already registered"|
