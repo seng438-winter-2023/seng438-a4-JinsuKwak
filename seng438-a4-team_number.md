@@ -40,10 +40,6 @@ In this assignment, students were required to learn two important aspects of tes
 
 
 # Analysis drawn on the effectiveness of each of the test classes
-For the Range class, our test suites were somewhat effective, we started out with 87% line coverage as well as 66% mutation coverage . This means that there were tests for the majority of the code in the methods. Carrying out mutation testing allow us to create tests that we did not come up with initially, strengthening the effectiveness of our test suite. 
-
-As for the DataUtilities class, we Started off with 99% line coverage and 89% mutation coverage, concluding that our test suite for DataUtilities was highly effective. Increasing the mutation coverage above 90% would be very difficult in this case, as many of the mutants created may not be applicable or are equivalent mutants.
-
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
@@ -72,10 +68,10 @@ Disadvantages of Mutation Testing
 
 # Explain your SELENUIM test case design process
 
-| Functionality | Input Sequence | Expected Ouput | Assertions |
-| --------------|----------------|----------------|------------|
-| Search for a product | Click on search bar, type "Tent", click on search button, click on product | Shows product title and image | Assert that product title and image are there|
-| Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | Shows warehouse title, description, and map | Assert that warehouse title and map image are there |
+| Functionality | Sequence of Events |
+| --------------|--------------------|
+| Search for a product | Click on search bar, type "Tent", click on search button, click on product |
+| Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | 
  
 
 # Explain the use of assertions and checkpoints
@@ -84,6 +80,14 @@ In Selenium, the assertions are checkpoints that are used to make sure that the 
 
 
 # How did you test each functionaity with different test data
+
+| Functionality | Input Sequence | Expected Ouput | Assertions |
+| --------------|----------------|----------------|------------|
+| Search for a product | Click on search bar, type "Tent", click on search button, click on product | Shows product title and image | Assert that product title and image are there|
+| Search for a product | Click on search button (no keyword in search bar) | Nothing happens | Assert that page is the same |
+| Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | Shows warehouse title, description, and map | Assert that warehouse title and map image are there |
+| Search for a warehouse | Click on locations link, click on find button (no keyword in search bar) | Nothing happens | Assert that warehouse title and map image are there |
+
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
