@@ -79,8 +79,8 @@ Disadvantages of Mutation Testing
 | Change Region | Click current region (top right conner CA in most cases) Click desired region to change |
 | Add Item to Cart | |
 | Sign In | |
-| Register | |
-| Compare Product | |
+| Register |Navigate to Sign up page, enter values for email, password, confirm password and press continue |
+| Compare Product |Click a section such as grocery, click item, add to compare, check hide, remove, remove all functionalities |
  
 
 # Explain the use of assertions and checkpoints
