@@ -105,7 +105,8 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Change Region | previous region selected: United States, desired region to change: Canada | reload the page with desired region "CA" and corresponding language settings | assert text "CA" is appeared on screen |
 | Change Region | previous region selected: Canada, desired region to change: France | reload the page with desired region "France" and corresponding language settings | assert text "France" is appeared on screen |
 | Add Item to Cart | Find item, click on item, press add to cart button| Item is added to cart| The cart size is > 0|
-| Sign In | Enter username and password, press next| Log in sucessfully| signInName size is >0, password size>0| 
+| Sign In | Enter valid username and password, press next| Log in sucessfully | signInName size is >0, password size>0| 
+| Sign In | Enter invalid username and password, press next| Log in Fails display waring message | assert text "The email address and/or password you entered are invalid." | 
 | Register | Navigate to Register page | Register page exists| Assert that Sign Up text is displayed|
 | Register | Navigate to Register Page, Attempt to register existing account| Error preventing from registering| Assert "The email address you entered is already registered"|
 | Register | Navigate to Register Page, enter invalid email| Message prompt to enter valid email| Assert "Enter a valid email address" is displayed|
