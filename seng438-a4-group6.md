@@ -104,6 +104,19 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Change Region | previous region selected: Canada, desired region to change: United States | reload the page with desired region "US" and corresponding language settings | assert text "US" is appeared on screen |
 | Change Region | previous region selected: United States, desired region to change: Canada | reload the page with desired region "CA" and corresponding language settings | assert text "CA" is appeared on screen |
 | Change Region | previous region selected: Canada, desired region to change: France | reload the page with desired region "France" and corresponding language settings | assert text "France" is appeared on screen |
+| Add Item to Cart | | | |
+| Add Item to Cart | | | |
+| Sign Up | | | | 
+| Sign Up | | | | 
+| Register | | | |
+| Register | | | |
+| Register | | | |
+| Register | | | |
+| Register | | | |
+| Compare Product | | | |
+| Compare Product | | | |
+| Compare Product | | | |
+| Compare Product | | | |
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
