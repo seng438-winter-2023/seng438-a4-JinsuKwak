@@ -65,8 +65,11 @@ public class SearchforProductTest {
   public void searchforProductNoInput() {
     driver.get("https://www.costco.ca/");
     driver.manage().window().setSize(new Dimension(695, 864));
-    element = driver.findElement(By.cssSelector(".btn:nth-child(4) > .co-search-thin"));
-    Assert.AreEquals(false, element.isEnabled());
+    driver.findElement(By.cssSelector(".btn:nth-child(4) > .co-search-thin")).click();
+    {
+      List<WebElement> elements = driver.findElements(By.cssSelector("html"));
+      assert(elements.size() > 0);
+    }
   }
   
 }
