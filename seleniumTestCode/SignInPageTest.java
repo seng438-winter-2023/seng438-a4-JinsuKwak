@@ -31,7 +31,7 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-public class SignUpPageTestTest {
+public class SignInPageTestTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
@@ -46,7 +46,7 @@ public class SignUpPageTestTest {
     driver.quit();
   }
   @Test
-  public void signUpPageTest() {
+  public void signInPageTest() {
     driver.get("https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/B2C_1A_SSO_WCS_signup_signin_537/oauth2/v2.0/authorize?ClientName=CABC&ui_locales=en-CA&scope=openid+offline_access&response_type=code+id_token&redirect_uri=https%3A%2F%2Fwww.costco.ca%2FOAuthLogonCmd&state=URL%3D%5BSSO%5D%2F%5BSSO%5D&nonce=MjnH38z5LLDfPt1s&client_id=e442e6e6-2602-4a39-937b-8b28b4457ed3&TC=0&response_mode=form_post");
     driver.manage().window().setSize(new Dimension(1215, 822));
     {
