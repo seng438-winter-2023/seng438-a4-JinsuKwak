@@ -1,0 +1,200 @@
+{
+  "id": "2ff663e0-e0d5-414c-b531-ed600b13c46c",
+  "version": "2.0",
+  "name": "SearchForWarehouse",
+  "url": "https://www.costco.ca",
+  "tests": [{
+    "id": "6ed66ec4-67b3-4ee3-8513-3313b6c6621b",
+    "name": "Search for Warehouse Details Valid Keyword",
+    "commands": [{
+      "id": "7cf05aab-40ce-404a-a212-41b288039942",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20189109-e5c5-430a-a5c5-bc51914bdb45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1381x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3619501-c955-4f2c-9884-a0c56f56b8b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locations",
+      "targets": [
+        ["linkText=Locations", "linkText"],
+        ["css=.nav-item:nth-child(22) > .nav-flyout", "css:finder"],
+        ["xpath=(//a[contains(text(),'Locations')])[2]", "xpath:link"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[11]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/warehouse-locations?langId=-24&storeId=10302&catalogId=11201')])[2]", "xpath:href"],
+        ["xpath=//div[11]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "208660e3-17f2-44ae-8860-8083e270e259",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-warehouse",
+      "targets": [
+        ["id=search-warehouse", "id"],
+        ["name=search_warehouse", "name"],
+        ["css=#search-warehouse", "css:finder"],
+        ["xpath=//input[@id='search-warehouse']", "xpath:attributes"],
+        ["xpath=//div[@id='search-warehouse-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e882ec6b-9e8b-4ef9-b28a-3a5ce32252d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-warehouse",
+      "targets": [
+        ["id=search-warehouse", "id"],
+        ["name=search_warehouse", "name"],
+        ["css=#search-warehouse", "css:finder"],
+        ["xpath=//input[@id='search-warehouse']", "xpath:attributes"],
+        ["xpath=//div[@id='search-warehouse-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "Calgary"
+    }, {
+      "id": "98032311-ad55-49ea-8811-403860b02883",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-btn > .btn-primary",
+      "targets": [
+        ["css=.input-group-btn > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='warehouse-locator-search-form']/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Find')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9601bb2d-c5c4-4470-8ddd-48ae0de6492e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=N Calgary",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "bc4e4fbb-35d4-44e5-aa49-3a88d1d6c815",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=N Calgary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2715aed2-9e24-46f9-a5ab-1ff3f95e3277",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=N Calgary",
+      "targets": [
+        ["linkText=N Calgary", "linkText"],
+        ["css=.warehouse:nth-child(1) .warehouse-name", "css:finder"],
+        ["xpath=//a[contains(text(),'N Calgary')]", "xpath:link"],
+        ["xpath=//table[@id='warehouse-list']/tr/td[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/warehouse-locations/n-calgary-calgary-ab-56.html')]", "xpath:href"],
+        ["xpath=//td[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'N Calgary')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a12b7930-6e70-4a86-8d55-24f237867313",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='warehouse']/div[3]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'N Calgary Warehouse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1904af6f-f38d-4557-b145-124e97af8756",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=labelCanvasId",
+      "targets": [
+        ["id=labelCanvasId", "id"],
+        ["css=#labelCanvasId", "css:finder"],
+        ["xpath=//canvas[@id='labelCanvasId']", "xpath:attributes"],
+        ["xpath=//div[@id='bing-map']/div/div/div/canvas[3]", "xpath:idRelative"],
+        ["xpath=//canvas[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8fd7bb7b-0a06-481b-a250-77de120c4204",
+    "name": "Search for Warehouse No Input",
+    "commands": [{
+      "id": "97bd3cb9-4d57-49c9-ad7f-7cb72b16c1ad",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ded0853-3231-4351-932d-b2fbac5c5fdb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1381x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1638b068-b762-49b1-8bf2-6bab3b2f8e1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locations",
+      "targets": [
+        ["linkText=Locations", "linkText"],
+        ["css=.nav-item:nth-child(22) > .nav-flyout", "css:finder"],
+        ["xpath=(//a[contains(text(),'Locations')])[2]", "xpath:link"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[11]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/warehouse-locations?langId=-24&storeId=10302&catalogId=11201')])[2]", "xpath:href"],
+        ["xpath=//div[11]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4821f587-7f3c-4eff-ba35-3cd338f69a98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-btn > .btn-primary",
+      "targets": [
+        ["css=.input-group-btn > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='warehouse-locator-search-form']/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Find')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a63197e8-4a55-4e59-b73b-0bc0899b4d0e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#error-container > .form-group",
+      "targets": [
+        ["css=#error-container > .form-group", "css:finder"],
+        ["xpath=//div[@id='error-container']/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e543a8eb-b9a0-4905-8610-c901a5d5b66a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.costco.ca/"],
+  "plugins": []
+}

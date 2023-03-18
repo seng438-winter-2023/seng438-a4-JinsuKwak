@@ -1,0 +1,147 @@
+{
+  "id": "30653635-122f-44e1-a08e-c53ee8729e71",
+  "version": "2.0",
+  "name": "SearchForProduct",
+  "url": "https://www.costco.ca",
+  "tests": [{
+    "id": "9ac70d89-31f8-4823-afa2-93b1a0e775e0",
+    "name": "Search for Product No Input",
+    "commands": [{
+      "id": "ca694121-dde4-4cef-8637-1819f3bbde59",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41beeb67-e5d0-48f1-87b4-e1e50247473e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "695x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e476bd74-80d8-42e3-9c5f-37cdbda8e289",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4) > .co-search-thin",
+      "targets": [
+        ["css=.btn:nth-child(4) > .co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86710b17-10fd-4873-981d-ca2d8beb7654",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=html",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "52947763-cf0a-4234-ae2e-0793c7e56495",
+    "name": "Search for Product Valid Keyword",
+    "commands": [{
+      "id": "7e07ad24-acd1-40cb-aaec-8b08857eff54",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69d36602-c764-48c2-b481-c8f71ae76190",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "671x850",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e61921ca-19c9-4e2b-87b6-4ffd8d2a6753",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83eaf01f-9178-42ae-a28d-73322848ecfa",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "tent"
+    }, {
+      "id": "f37ebabd-cd45-4e59-b67c-9ede85789bab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4) > .co-search-thin",
+      "targets": [
+        ["css=.btn:nth-child(4) > .co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30e0b05e-bec9-4513-ae89-c343a7f25aa2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product:nth-child(1) .img-responsive",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d1a8873-b3b3-4a1d-aed7-f119a60557f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product:nth-child(1) .img-responsive",
+      "targets": [
+        ["css=.product:nth-child(1) .img-responsive", "css:finder"],
+        ["xpath=//img[@alt='Coleman 6-Person Skydome Dark Room Camping Tent']", "xpath:img"],
+        ["xpath=//div[4]/div/div/div[2]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f93423b-47e0-4686-8593-89c0692f7834",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=RICHFXViewerContainer___richfx_id_0_initialImage",
+      "targets": [
+        ["id=RICHFXViewerContainer___richfx_id_0_initialImage", "id"],
+        ["css=#RICHFXViewerContainer___richfx_id_0_initialImage", "css:finder"],
+        ["xpath=//img[@alt='View Larger Image 1']", "xpath:img"],
+        ["xpath=//img[@id='RICHFXViewerContainer___richfx_id_0_initialImage']", "xpath:attributes"],
+        ["xpath=//div[@id='RICHFXViewerContainer___richfx_id_0']/img[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d4655b3-c5d2-4741-bf9f-0f138359d241",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-title",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9be9f90b-cffe-4c1d-ba66-5bbf1fe22684",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.costco.ca/"],
+  "plugins": []
+}
