@@ -42,11 +42,15 @@ In this assignment, students were required to learn two important aspects of tes
 Mutatation testing is needed because it tells us the quality of our test suite and how good it is at catching bugs.
 
 Advantages of Mutation Testing
+
      -Mutation Testing is automated 
+     
      -Mutation Testing gives us the mutation score, which tells us when to stop testing and which test suite's quality is better
 
 Disadvantages of Mutation Testing
+
      -Mutation Testing is time consuming
+     
      -The presence of equivalent mutants (there tends to be a lot of equivalent mutants in SUTs)
 
 
