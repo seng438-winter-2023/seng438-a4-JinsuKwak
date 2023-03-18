@@ -33,7 +33,7 @@ In this assignment, students were required to learn two important aspects of tes
     DataUtilities Class:
  
         Before:
-        <img width="500" alt="Screen Shot 2023-03-17 at 10 53 36 AM" src="https://user-images.githubusercontent.com/81532489/226078541-a6adf925-206c-40fe-8f3b-85e0c71745a8.png">
+<img width="500" alt="Screen Shot 2023-03-17 at 10 53 36 AM" src="https://user-images.githubusercontent.com/81532489/226078541-a6adf925-206c-40fe-8f3b-85e0c71745a8.png">
 
 
         After:
