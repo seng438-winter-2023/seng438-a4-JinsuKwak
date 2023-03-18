@@ -78,7 +78,7 @@ Disadvantages of Mutation Testing
 | Change Delivery Location | Click on Delivery Location, type "PostalCode", click Change Delivery Location button, where PostalCode is 6 digit letter with [A1A 1A1] format|
 | Change Region | Click current region (top right conner CA in most cases) Click desired region to change |
 | Add Item to Cart | Sign in, Navigate to item, add to shopping cart |
-| Sign In |Navigate to Sign in, enter credentials, attempt to log in |
+| Sign In | Click Account button, enter credentials, attempt to log in |
 | Register |Navigate to Sign up page, enter values for email, password, confirm password and press continue |
 | Compare Product |Click a section such as grocery, click item, add to compare, check hide, remove, remove all functionalities |
  
@@ -106,7 +106,7 @@ Checkpoints, on the other hand, are used to verify that a specific value or stat
 | Change Region | previous region selected: Canada, desired region to change: France | reload the page with desired region "France" and corresponding language settings | assert text "France" is appeared on screen |
 | Add Item to Cart | Find item, click on item, press add to cart button| Item is added to cart| The cart size is > 0|
 | Sign In | Enter valid username and password, press next| Log in sucessfully | signInName size is >0, password size>0| 
-| Sign In | Enter invalid username and password, press next| Log in Fails display waring message | assert text "The email address and/or password you entered are invalid." | 
+| Sign In | Enter invalid username and password, press next| Log in Fails display waring message "The email address and/or password you entered are invalid." | assert text "We can't seem to find your account." | 
 | Register | Navigate to Register page | Register page exists| Assert that Sign Up text is displayed|
 | Register | Navigate to Register Page, Attempt to register existing account| Error preventing from registering| Assert "The email address you entered is already registered"|
 | Register | Navigate to Register Page, enter invalid email| Message prompt to enter valid email| Assert "Enter a valid email address" is displayed|
