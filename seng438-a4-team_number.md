@@ -86,7 +86,7 @@ In Selenium, the assertions are checkpoints that are used to make sure that the 
 | Search for a product | Click on search bar, type "Tent", click on search button, click on product | Shows product title and image | Assert that product title and image are there|
 | Search for a product | Click on search button (no keyword in search bar) | Nothing happens | Assert that page is the same |
 | Search for a warehouse | Click on locations link, type "Calgary", click on find button, click on a warehouse | Shows warehouse title, description, and map | Assert that warehouse title and map image are there |
-| Search for a warehouse | Click on locations link, click on find button (no keyword in search bar) | Nothing happens | Assert that warehouse title and map image are there |
+| Search for a warehouse | Click on locations link, click on find button (no keyword in search bar) | Error Message Appears | Assert that error message appears |
 
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
